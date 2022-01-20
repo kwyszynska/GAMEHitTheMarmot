@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="436dp"
+        android:layout_height="414dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/board4" />
+
+    <ImageView
+        android:id="@+id/m7"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="MarmotOnClick"
+        android:tag="7"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toStartOf="@+id/m8"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@drawable/marmot"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/m8"
+        android:layout_width="95dp"
+        android:layout_height="83dp"
+        android:onClick="MarmotOnClick"
+        android:tag="8"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.776"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m9"
+        android:layout_width="89dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="MarmotOnClick"
+        android:tag="9"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m8"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.768"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m6"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:onClick="MarmotOnClick"
+        android:tag="6"
+        app:layout_constraintBottom_toTopOf="@+id/m9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/m5"
+        app:layout_constraintTop_toBottomOf="@+id/m3"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m5"
+        android:layout_width="94dp"
+        android:layout_height="97dp"
+        android:onClick="MarmotOnClick"
+        android:tag="5"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m4"
+        android:layout_width="89dp"
+        android:layout_height="99dp"
+        android:onClick="MarmotOnClick"
+        android:tag="4"
+        app:layout_constraintEnd_toStartOf="@+id/m5"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m1"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m3"
+        android:layout_width="97dp"
+        android:layout_height="107dp"
+        android:onClick="MarmotOnClick"
+        android:tag="3"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m2"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m1"
+        android:layout_width="90dp"
+        android:layout_height="106dp"
+        android:onClick="MarmotOnClick"
+        android:tag="1"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toStartOf="@+id/m2"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/marmot" />
+
+    <ImageView
+        android:id="@+id/m2"
+        android:layout_width="97dp"
+        android:layout_height="107dp"
+        android:onClick="MarmotOnClick"
+        android:tag="2"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/board"
+
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/marmot" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:onClick="StartGame"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="293dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9A9494"
+        android:progressTint="#12A118"
+        android:scaleY="3"
+        android:scrollbarSize="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/m2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="343dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="Get all the 100 marmots before you run out of time!"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
